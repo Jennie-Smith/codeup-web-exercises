@@ -28,7 +28,11 @@ console.log(helloMessage);
  * console.
  */
 let myName = "Jennie";
-sayHello(myName);
+helloMessage = sayHello(myName);
+console.log(helloMessage);
+// or console.log(sayHello(myName));
+//or sayHello(myName);
+
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
 var random = Math.floor((Math.random() * 3) + 1);
@@ -97,9 +101,9 @@ alert("This is your tip: " + calculateTip(x, y));
  */
 
 function applyDiscount(price, discount) {
-    let yay = price * discount
-    let total = price - yay
-    return total;
+     let yay = price * discount
+     let total = price - yay
+     return total;
 }
 
 applyDiscount(100, 0.2);
