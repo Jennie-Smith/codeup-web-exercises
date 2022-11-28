@@ -187,7 +187,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-//trail and error right here:
+//trial and error right here:
 // function evenOrOdd(inputInt){
 //     if (inputInt % 2 === 0) {
 //         return "It's Even";
@@ -211,7 +211,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //     } else {
 //         return "I don't know what your number is."
 //     }
-// } trail and error stops here.
+// } trial and error stops here.
 
 function catchAll(inputInt) {
     if (inputInt != NaN) {
@@ -243,5 +243,3 @@ confirm("Would you like to enter a number?");
 let b = prompt("Please enter a number: ");
 let inputInt = parseInt(b);
 alert(catchAll(inputInt));
-
-
