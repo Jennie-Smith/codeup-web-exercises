@@ -7,8 +7,14 @@
 //         i++;
 //     }
 // }
+function showMultiplicationTable(){
+    for (let i = 1; i < 11; i++){
+        let x = 7 * i;
+        console.log("7 x " + i + " = " + x);
+    }
+}
 
-//showMultiplicationTable();
+showMultiplicationTable();
 //0- 6
 // const x = Math.floor(Math.random() * 181) + 20;
 // console.log(x);
@@ -39,10 +45,10 @@
 //
 // nested()
 
-function minusFive(){
-    for (let i = 100; i > 0; i -= 5){
-        console.log(i)
-    }
-}
-
-minusFive()
+// function minusFive(){
+//     for (let i = 100; i > 0; i -= 5){
+//         console.log(i)
+//     }
+// }
+//
+// minusFive()
