@@ -6,13 +6,20 @@
 //     console.log(i);
 //     i += i;
 // }
-
-
-var allCones = Math.floor(Math.random() * 50) + 50;
-// This expression will generate a random number between 1 and 5
-
-
-let i = 50;
+//
+// better code below
+//
+// let i = 1;
+// while (i <= 16) {
+//     console.log(2 ** i);
+//     i++
+// }
+// var allCones = Math.floor(Math.random() * 50) + 50;
+// // This expression will generate a random number between 1 and 5
+//
+//
+let i = Math.floor(Math.random() * 50) + 50;
+console.log("you have " + i + " cones")
 
 do {
     let cones = Math.floor(Math.random() * 5) + 1;

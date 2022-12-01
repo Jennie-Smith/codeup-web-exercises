@@ -7,6 +7,7 @@
 //         i++;
 //     }
 // }
+// for-loop version below:
 function showMultiplicationTable(){
     for (let i = 1; i < 11; i++){
         let x = 7 * i;
