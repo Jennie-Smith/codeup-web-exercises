@@ -11,10 +11,10 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    const person = {
-        firstName: "Jennie",
-        lastName: "Smith"
-    }
+    const person = {}
+    person.firstName = "Jennie",
+    person.lastName =  "Smith"
+
     console.log(person.firstName);
     console.log(person.lastName);
     /**
@@ -26,6 +26,11 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+    person.sayHello = function () {
+        return "Hello " + person.firstName + " " + person.lastName + "!";
+    };
+
+    console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -41,12 +46,20 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-
+    let shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+    shoppers.forEach(function (shopper, price) {
+        if (shopper.amount >= 200){
+            let x = shopper.amount * .12;
+            let y = shopper.amount - x;
+            console.log(shopper.name + " has a price of $" + shopper.amount + ". And they have a discount of 12%. They will pay this amount: $" + y);
+        } else {
+            console.log(shopper.name + " has a price of " + shopper.amount + ". And they don't get an discount.");
+        }
+    });
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
