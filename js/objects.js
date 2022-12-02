@@ -72,7 +72,47 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    const books = [
+        {
+            title: 'The Name of the Wind',
+            author: {
+                firstName: 'Patrick',
+                lastName: 'Rothfuss',
+            }
+        },
+        {
+            title: 'The Wheel of Time',
+            author: {
+                firstName: 'Robert',
+                lastName: 'Jordan',
+            }
+        },
+        {
+            title: 'The Chronicles of Narnia',
+            author: {
+                firstName: 'C. S.',
+                lastName: 'Lewis',
+            }
+        },
+        {
+            title: 'The Tales of Earthsea',
+            author: {
+                firstName: 'Ursula K.',
+                lastName: 'Le Guin',
+            }
+        },
+        {
+            title: 'The Priory of the Orange Tree',
+            author: {
+                firstName: 'Samantha',
+                lastName: 'Shannon',
+            }
+        }
 
+    ];
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -97,7 +137,12 @@
      *      ---
      *      ...
      */
+    books.forEach(function (book, author) {
+        console.log("Book #" + (books.indexOf(book) + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
 
+    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
