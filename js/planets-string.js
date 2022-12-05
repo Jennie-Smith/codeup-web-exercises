@@ -24,4 +24,10 @@
     console.log(planString);
     document.write(planString);
 
+    //bonus:
+    //planString = planetsArray.join("</li><li>");
+    //planString = "<ul><li>" + planString + "</li></ul>";
+    //console.log(planString);
+    //document.write(planString);
+
 })();

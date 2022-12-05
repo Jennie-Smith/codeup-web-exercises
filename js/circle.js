@@ -3,13 +3,13 @@
 
     // create a circle object
     let circle = {
-        radius: 3,
+        radius: 5,
 
-        getArea: function (rad) {
+        getArea: function (radius) {
             // TODO: complete this method
             // hint: area = pi * radius^2
             //console.log((Math.pow(rad, 2) * Math.PI));
-            return Math.pow(rad, 2) * Math.PI;
+            return Math.pow(radius, 2) * Math.PI;
             // TODO: return the proper value
         },
 
