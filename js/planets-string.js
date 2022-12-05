@@ -21,6 +21,7 @@
      * string, and <li> tags around each planet.
      */
     let planString = planetsArray.join(" <br> ")
+    console.log(planString);
     document.write(planString);
 
 })();
