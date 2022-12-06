@@ -154,4 +154,30 @@
      *   `showBookInfo` function.
      */
 
+    function createBook(title, fName, lName) {
+        let book = {
+            title: title,
+            author: {
+                firstName: fName,
+                lastName: lName
+            }
+        };
+        book.showBookInfo = function(index){
+            console.log(`${index + 1}
+            ${this.title}
+            ${this.author.firstName}
+            ${this.author.lastName}`);
+        };
+        return book;
+    }
+    books = [];
+    books.push(createBook("first book", "first name", "second name"));
+    books.push(createBook("Dune", "Frank", "Herbert"));
+    console.log(books);
+
+    let index = 1;
+    for (const book of books){
+        book.showBookInfo(index);
+        index++;
+    }
 })();
