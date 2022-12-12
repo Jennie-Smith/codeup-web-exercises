@@ -7,20 +7,41 @@ body, html {
 }
 
 .message-info {
-    border-radius: 25px;
-    background: #73AD21;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px double;
     padding: 10px;
     width: 100%;
+    background-color: paleturquoise;
+    color: blue;
 }
 
 .message-success{
-
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px double;
+    padding: 10px;
+    width: 100%;
+    background-color: palegreen;
+    color: darkgreen;
 }
 
 .message-warning {
-
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px double;
+    padding: 10px;
+    width: 100%;
+    background-color: palegoldenrod;
+    color: goldenrod;
 }
 
 .message-error {
-
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px double;
+    padding: 10px;
+    width: 100%;
+    background-color: palevioletred;
+    color: darkred;
 }
