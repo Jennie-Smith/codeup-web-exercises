@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message-info {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 10px;
+    width: 100%;
+}
+
+.message-success{
+
+}
+
+.message-warning {
+
+}
+
+.message-error {
+
+}
