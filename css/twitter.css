@@ -116,14 +116,16 @@ a {
     padding: .5em;
     overflow: auto;
 }
-.media-image{
+.media-image {
     width: 50px;
     float: left;
-    margin: 1.33em;
+    margin-top: 1.33em;
+    position: relative;
 }
 .media-body{
-    position: relative;
+    /*position: relative;*/
     float: right;
-    width: calc(100% - 1.33em);
+    width: calc(100% - 50px);
+    padding: 0px 0px 0px 40px
 
 }
