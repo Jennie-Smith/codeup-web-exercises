@@ -6,16 +6,31 @@
 </head>
 <body>
 
+<h1>This is the h1</h1>
+<p>This is a paragraph</p>
+<p>This the second paragraph</p>
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+<div>It's a div!</div>
+
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
         crossorigin="anonymous">
 </script>
 <script>
-    $(document).ready(function () {
-        alert("The DOM has finished loading");
-    });
+    // $(document).ready(function () {
+    //     alert("The DOM has finished loading");
+    // });
+    //or this way
     // $(function () {
     //     alert("this is ready too!")
     // })
+    $('li').css('font-size', '20px')
+    $('h1, p, li').css('background-color', '#E6E6FA')
+    alert($('h1').html());
+
 </script>
 </body>
 </html>
