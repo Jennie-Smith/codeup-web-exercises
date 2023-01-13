@@ -27,9 +27,27 @@
     // $(function () {
     //     alert("this is ready too!")
     // })
-    $('li').css('font-size', '20px')
-    $('h1, p, li').css('background-color', '#E6E6FA')
-    alert($('h1').html());
+    // $('li').css('font-size', '20px')
+    // $('h1, p, li').css('background-color', '#E6E6FA')
+    // alert($('h1').html());
+    $('h1').click(
+        function (){
+            $(this).css('background-color','#E6E6FA');
+        }
+    )
+    $('p').dblclick(
+        function (){
+            $(this).css('font-size','18px');
+        }
+    )
+    $('li').hover(
+        function(handlerIn) {
+            $(this).css('background-color', 'red');
+        },
+        function(handlerOut) {
+            $(this).css('background-color', 'transparent');
+        }
+    );
 
 </script>
 </body>
