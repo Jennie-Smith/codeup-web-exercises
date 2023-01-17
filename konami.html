@@ -4,42 +4,54 @@
     <title>Konami Code</title>
 </head>
 <body>
-<h1>Konami Code</h1>
+<h1 class="visible">Input the Konami Code if you can!</h1>
+<h1 class="invisible">Well Done! </h1>
 
-<input type="text">
-<button>Submit</button>
+<audio id="fanfare" preload="auto">
+    <source src="sound/final-fantasy-vii-victory-fanfare-1.mp3" type="audio/mpeg">
+</audio>
 
+<div class="invisible" style="width:100%;height:0;padding-bottom:56%;position:relative;">
+    <iframe src="https://giphy.com/embed/d2Z4rTi11c9LRita" width="100%" height="100%" style="position:absolute" class="giphy-embed" allowFullScreen></iframe>
+</div>
+<!--<p><a href="https://giphy.com/gifs/rockymovie-movie-rocky-sylvester-stallone-d2Z4rTi11c9LRita"></a></p>-->
+<style>
+    .invisible {
+        visibility: hidden;
+    }
+    .notvisible {
+        visibility: visible;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+</style>
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
         crossorigin="anonymous">
 </script>
 <script>
     "use strict";
-    $(document).ready(function () {
+    const konami = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter"
+    // const konami = "ArrowUpArrowUp";
+    let password = "";
+
+    function dom() {
         $(document).keyup(function (event) {
-            console.log(event.keyCode);
-            // const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
-            // const password = [];
-            // password.push(event.keyCode);
-            // console.log(password)
+            console.log(event.key);
+            password += event.key;
+            console.log(password);
+            if (konami === password) {
+                // alert("You have 30 extra lives!");
+                $('body').css("background-color", '#E6E6FA');
+                $('audio#fanfare')[0].play();
+                $('.invisible').toggleClass('notvisible')
+                $('.visible').toggleClass('invisible')
+            }
         });
-        $(document).keyup(function(event) {
-            const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
-            // const konami = [38, 40];
-            const password = [];
-            // const password = [38, 40];
+    }
 
-
-            // for (let i = 0; i < konami.length; i++) {
-            //     for (let j = 0; j < password.length; j++) {
-            //         if (konami[i] === password[j]){
-            //             console.log("You got 30 extra lives!");
-            //         }
-            //     }
-            // }
-        });
-
-    });
-
+    dom();
 
 </script>
 </body>
