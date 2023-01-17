@@ -39,7 +39,30 @@
   <dd class="invisible">Description</dd>
   
 </dl>
-<button type="button">Submit</button>
+<button id="top-btn" type="button">Submit</button>
+
+<h3 id="parks1-heading">National Park 1</h3>
+<ul id="parks1">
+  <li>Fact 1</li>
+  <li>Fact 2</li>
+  <li>Fact 3</li>
+  <li>Fact 4</li>
+</ul>
+<h3 id="parks2-heading">National Park 2</h3>
+<ul id="parks2">
+  <li>Fact 1</li>
+  <li>Fact 2</li>
+  <li>Fact 3</li>
+  <li>Fact 4</li>
+</ul>
+<h3 id="parks3-heading">National Park 3</h3>
+<ul id="parks3">
+  <li>Fact 1</li>
+  <li>Fact 2</li>
+  <li>Fact 3</li>
+  <li>Fact 4</li>
+</ul>
+<button id="bottom-btn" type="button">Submit</button>
 
 <style>
   .invisible {
@@ -54,10 +77,18 @@
 </script>
 <script>
   $(document).ready(function () {
-    $("button").click(function(event) {
+    $("#top-btn").click(function(event) {
       $('.invisible').toggleClass('visible')
     })
-
+    $("#bottom-btn").click(function(event) {
+      $('ul li:last-child').css('background-color', '#FF0');
+    })
+    $('h3').click(function (event) {
+      $('li').css('font-weight', 'bold');
+    })
+    $('li').click(function (event){
+      $('ul li:first-child').css('color', '#0000FF');
+    })
   })
 </script>
 </body>
