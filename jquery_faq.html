@@ -64,12 +64,40 @@
 </ul>
 <button id="bottom-btn" type="button">Submit</button>
 
+<div id="pic1" class="frame">
+  <img id="change-image" src="img/flower1.jpeg">
+</div>
+
+<button id="pic1-btn" class="picture-btn" type="button">Switch</button>
+
+
+<div id="pic2" class="frame switching">
+  <img id="change-image2" src="img/flower2-purple.jpeg">
+</div>
+
+<button id="pic2-btn" class="picture-btn" type="button">Switch</button>
+
+
+<div id="pic3" class="frame switching">
+  <img id="change-image3" src="img/flower3-green.jpeg">
+</div>
+
+<button id="pic3-btn" class="picture-btn" type="button">Switch</button>
+
+
 <style>
   .invisible {
     visibility: hidden;
   }
   .visible {
     visibility: visible;
+  }
+  .frame {
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 20%;
   }
 </style>
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
@@ -89,7 +117,18 @@
     $('li').click(function (event){
       $('ul li:first-child').css('color', '#0000FF');
     })
+
+
+    $("#pic1-btn").click(function() {
+      let img1 = $('#change-image').attr('src');
+      let img2 = $('#change-image2').attr('src');
+      let empty = '';
+
+    });
+
+
   })
+
 </script>
 </body>
 </html>
