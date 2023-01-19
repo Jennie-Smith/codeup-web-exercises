@@ -111,18 +111,23 @@
     $("#bottom-btn").click(function(event) {
       $('ul li:last-child').css('background-color', '#FF0');
     })
+
     $('h3').click(function (event) {
       $('li').css('font-weight', 'bold');
     })
+
     $('li').click(function (event){
       $('ul li:first-child').css('color', '#0000FF');
     })
 
 
     $("#pic1-btn").click(function() {
-      let img1 = $('#change-image').attr('src');
-      let img2 = $('#change-image2').attr('src');
-      let empty = '';
+      let img1 = $('#change-image').prev().attr('src');
+      let img2 = $('#change-image2').parent().next().children().firstChild().attr('src');
+      // let img3 = $('#change-image3').attr('src');
+      let emptythird = img1;
+      img1 = img2;
+      img2 = emptythird;
 
     });
 
