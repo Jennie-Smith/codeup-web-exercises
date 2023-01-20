@@ -1,0 +1,15 @@
+[
+  {
+    "location": "Snooze A.M. Eatery San Antonio, TX",
+    "title": "Snooze A.M. Eatery",
+    "description": "Breakfast Place"
+  }, {
+  "location": "Cracker Barrel San Antonio, TX",
+  "title": "Cracker Barrel San Antonio, TX",
+  "description": "Southern Eatin'"
+}, {
+  "location": "LongHorn Steakhouse San Antonio, TX",
+  "title": "LongHorn Steakhouse",
+  "description": "THE steak place"
+}
+]
