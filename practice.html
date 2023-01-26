@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Place the geocoder input outside the map</title>
 </head>
 <body>
 
+<style>
+    .foo {
+        background-color: red;
+    }
+</style>
+<p>Codeup Rocks! 1</p>
+<p>Codeup Rocks! 2</p>
+<p>Codeup Rocks! 3</p>
+<p>Codeup Rocks! 4</p>
+<p>Codeup Rocks! 5</p>
+<p>Codeup Rocks! 6</p>
 
-<script src="js/practice.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
+
+<script>
+    "use strict";
+    $(document).ready(function (){
+        let paragraphs = $('p').last().css('background-color', '#FF0');
+    });
+</script>
+
 </body>
 </html>
