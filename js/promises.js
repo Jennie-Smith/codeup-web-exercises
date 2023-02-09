@@ -4,7 +4,11 @@
         return fetch("data/docrob_github_events.json")
             .then((response) => response.json())
             .then((data) => {
-                return data[0].created_at
+                for (let i = 0; i < data.length; i++) {
+                    if (data[i].type === 'PushEvent'){
+                        return data[0].created_at
+                    }
+                }
             })
             .catch((error) => error)
     }
